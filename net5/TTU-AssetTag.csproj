@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>TTU_AssetTag</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
+		<PublishSingleFile>true</PublishSingleFile>
+		<IncludeNativeLibrariesInSingleFile>true</IncludeNativeLibrariesInSingleFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="5.0.0-rc.1.20451.14" />
+    <PackageReference Include="System.Security.Principal.Windows" Version="5.0.0-rc.1.20451.14" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="resources\**" >
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<CopyToPublishDirectory>Always</CopyToPublishDirectory>
+			<ExcludeFromSingleFile>false</ExcludeFromSingleFile>
+		</Content>
+	</ItemGroup>
+
+</Project>

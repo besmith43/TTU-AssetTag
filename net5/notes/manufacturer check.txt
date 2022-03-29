@@ -1,0 +1,7 @@
+use the following wmic command
+
+wmic computersystem get manufacturer
+
+get the windows install date 
+
+wmic os get installdate
